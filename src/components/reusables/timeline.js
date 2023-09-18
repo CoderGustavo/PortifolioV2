@@ -29,9 +29,7 @@ export default function TimelineSection() {
         <>
         <section>
             <Stack justifyContent='center' alignItems='center'>
-                <H3 transform='uppercase'>
-                    Minhas experiencias
-                </H3>
+                <H3 align="center" weight="500" transform="uppercase" size="32pt">Minhas experiencias</H3>
             </Stack>
             <Stack justifyContent='flex-start' alignItems='flex-start'>
                 <Timeline>

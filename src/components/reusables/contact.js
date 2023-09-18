@@ -55,9 +55,7 @@ export default function Contact(){
         <>
             <SectionStyled>
                 <Stack justifyContent='space-around' alignItems='flex-start'>
-                    <H3 transform='uppercase'>
-                        Peça agora mesmo um orçamento
-                    </H3>
+                    <H3 align="center" weight="500" transform="uppercase" size="32pt">Peça agora mesmo um orçamento</H3>
                     <Stack direction="row" gap="1rem" style={{width: '100%'}}>
                         <TextFieldStyled
                             id="outlined-basic"

@@ -18,7 +18,7 @@ export function Slide({children, modules, ...props}) {
             loop={true}
             spaceBetween={30}
             autoplay={{
-                delay: 2500
+                delay: 10
             }}
             pagination={{
             clickable: true,

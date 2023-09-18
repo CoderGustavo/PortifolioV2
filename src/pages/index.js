@@ -8,6 +8,17 @@ import Services from '@/components/patterns/services';
 import Contact from '@/components/reusables/contact';
 import TimelineSection from '@/components/reusables/timeline';
 
+import { SwiperSlide } from 'swiper/react';
+
+import styled from "styled-components";
+
+import SlideSkills from '@/components/patterns/slideSkills';
+
+const SwiperSlideStyled = styled(SwiperSlide)`
+
+`;
+
+
 export default function Home(props) {
 
 	return (
@@ -20,6 +31,7 @@ export default function Home(props) {
 			<section>
 				<Container maxWidth="xl">
 					<TimelineSection />
+					<SlideSkills />
 					<Services />
 				</Container>
 			</section>

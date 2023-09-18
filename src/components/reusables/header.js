@@ -109,7 +109,7 @@ export default function Header() {
                         </Link>
                         <Link href="/" className="nav-link menu">
                             <Text>
-                                Habilidades
+                                Tecnologias
                             </Text>
                         </Link>
                         <Link href="/" className="nav-link menu">

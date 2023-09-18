@@ -3,7 +3,7 @@ import Link from '@/components/infra/link';
 import styled from 'styled-components';
 import Image from 'next/image'
 
-import { H1, Text } from '@/components/design_system/typography'
+import { H1, H3, Text } from '@/components/design_system/typography'
 
 const CatMainStyled = styled.div`
     position: relative;
@@ -21,7 +21,7 @@ const Services = () => {
         <>
             <Grid container spacing={4} component={CatMainStyled}>
                 <Grid xs={12}>
-                    <H1 align="center" weight="500" transform="uppercase" size="32pt" >Serviços</H1>
+                    <H3 align="center" weight="500" transform="uppercase" size="32pt" >Serviços</H3>
                 </Grid>
                 <Grid xs={4}>
                     <Link href='/' className='' >
