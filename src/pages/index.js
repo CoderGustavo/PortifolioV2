@@ -6,6 +6,7 @@ import { Container } from '@mui/material';
 
 import Services from '@/components/patterns/services';
 import Contact from '@/components/reusables/contact';
+import TimelineSection from '@/components/reusables/timeline';
 
 export default function Home(props) {
 
@@ -18,6 +19,7 @@ export default function Home(props) {
 			</section>
 			<section>
 				<Container maxWidth="xl">
+					<TimelineSection />
 					<Services />
 				</Container>
 			</section>
