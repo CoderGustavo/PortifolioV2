@@ -15,15 +15,19 @@ import Image from 'next/image';
 
 
 const HeaderStyled = styled.header`
-    background-color: ${getColor('black')};
-    top: 2rem;
     height: 60px;
+    top: 1rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
-    border-radius: 8px;
     position: relative;
     z-index: 99 !important;
     transition: .3s;
+    & > div {
+        background-color: ${getColor('black')};
+        border-radius: 8px;
+        padding: 0 0.5rem;
+    }
     & .logo{
         display: flex;
         align-items: center;

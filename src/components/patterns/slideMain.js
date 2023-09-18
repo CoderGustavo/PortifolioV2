@@ -20,6 +20,7 @@ import { H1, H4 } from "../design_system/typography";
 import { getColor } from "../design_system/colors";
 
 import banner from '@/../public/banner.jpeg';
+import instagram from '@/../public/instagram.png';
 
 export const StyledSlide = styled(SlideTemplate)`
     position: relative !important;
@@ -28,8 +29,20 @@ export const StyledSlide = styled(SlideTemplate)`
     margin-bottom: -60px;
     height: 90vh;
     & .swiper-slide{
+        position: relative;
         display: flex;
         justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        &:before{
+            content:'';
+            position:absolute;
+            left:0; top:0;
+            width:100%; height:100%;
+            display:inline-block;
+            background: linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0));
+        }
     }
     & img{
         position: absolute;
@@ -42,12 +55,23 @@ export const StyledSlide = styled(SlideTemplate)`
 
 const ButtonStyled = styled(Button)`
     margin-top: 2rem;
-    background-color: ${getColor('white')};
+    background-color: transparent;
     padding: .5rem 2rem;
-    &:hover{
-        background-color: ${getColor('gray-100')};
-        box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    border-color: transparent;
+    width: 100px;
+    height: 100px;
+    & img{
+        position: grid;
+        place-items: center;
     }
+    &:hover{
+        background-color: transparent;
+        border-color: transparent;
+    }
+`;
+
+const StackStyled = styled(Stack)`
+    position: relative;
 `;
 
 
@@ -58,15 +82,17 @@ export function Slide(props) {
 				<SwiperSlide>
                     <Image src={banner.src} alt="banner-principal" height={400} width={2000} blurDataURL={banner.src} placeholder="blur"/>
                     <Container maxWidth="xl">
-                        <Stack alignItems='flex-start' justifyContent='center' style={{width: '100%', height: '100%'}}>
+                        <StackStyled alignItems='flex-start' justifyContent='center' style={{width: '100%', height: '100%'}}>
                             <H1 color="white" transform="uppercase">
-                                O Melhor do seu verão <br /> é aqui
+                                Desenvolvedor full-stack
                             </H1>
                             <H4 color="white" transform="none" margin="5px 0 0 0">
-                                Entre no clima do verão com as roupas <br /> mais estilosas da estação.
+                                Um jovem criativo, ambicioso e focado em entregas.
                             </H4>
-                            <ButtonStyled margin='40px 0 0 0' variant="outlined">EU QUERO!</ButtonStyled>
-                        </Stack>
+                            <ButtonStyled margin='40px 0 0 0' variant="outlined">
+                                <Image src={instagram.src} alt="banner-principal" height={100} width={100} blurDataURL={instagram.src} placeholder="blur"/>
+                            </ButtonStyled>
+                        </StackStyled>
                     </Container>
 				</SwiperSlide>
 			</StyledSlide>
