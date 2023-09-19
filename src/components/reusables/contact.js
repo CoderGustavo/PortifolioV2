@@ -6,7 +6,6 @@ import { H3, Text } from "../design_system/typography";
 
 const SectionStyled = styled.section`
     position: relative;
-    background: ${getColor('gray-100')};
     height: 40vh;
     & > div {
         height: 100%;
@@ -26,6 +25,8 @@ const ButtonStyled = styled(Button)`
 `;
 
 export const TextFieldStyled = styled(TextField)`
+    background-color: ${getColor('white')};
+    color: ${getColor('white')};
     & label.Mui-focused {
         color: ${getColor('primary-200')};
     }
@@ -60,19 +61,11 @@ export default function Contact(){
                         <TextFieldStyled
                             id="outlined-basic"
                             label="Seu nome"
-                            variant="standard"
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
                             sx={{width: '100%' }}
                         />
                         <TextFieldStyled
                         id="outlined-basic"
                         label="Seu e-mail"
-                        variant="standard"
-                        InputLabelProps={{
-                            shrink: true,
-                        }}
                         sx={{width: '100%' }}
                         />
                     </Stack>

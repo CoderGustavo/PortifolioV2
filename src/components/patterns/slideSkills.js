@@ -27,10 +27,10 @@ export default function SlideSkills(props) {
 	return (
 		<>
             <section>
-                <Stack alignItems="center">
+                <Stack alignItems="center" style={{paddingTop: "2rem", paddingBottom: "2rem"}}>
                     <H3 align="center" weight="500" transform="uppercase" size="32pt" >Tecnologias conhecidas</H3>
                 </Stack>
-                <SlideTecnologies slidesPerView="5" >
+                <SlideTecnologies slidesPerView="5" style={{paddingBottom: "2rem"}}>
                     <SwiperSlide>
                         <Image src={html.src} alt="html" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>

@@ -28,10 +28,10 @@ export default function TimelineSection() {
     return (
         <>
         <section>
-            <Stack justifyContent='center' alignItems='center'>
+            <Stack justifyContent='center' alignItems='center' style={{paddingTop: "2rem", paddingBottom: "1rem"}}>
                 <H3 align="center" weight="500" transform="uppercase" size="32pt">Minhas experiencias</H3>
             </Stack>
-            <Stack justifyContent='flex-start' alignItems='flex-start'>
+            <Stack justifyContent='flex-start' alignItems='flex-start' style={{paddingBottom: "2rem"}}>
                 <Timeline>
                     <TimelineItem>
                         <TimelineOppositeContent>
