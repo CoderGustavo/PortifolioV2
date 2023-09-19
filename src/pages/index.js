@@ -14,9 +14,7 @@ import styled from "styled-components";
 
 import SlideSkills from '@/components/patterns/slideSkills';
 
-const SwiperSlideStyled = styled(SwiperSlide)`
 
-`;
 
 
 export default function Home(props) {

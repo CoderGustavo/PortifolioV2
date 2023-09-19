@@ -21,6 +21,14 @@ import mongodb from '@/../public/technologies/mongodb.png';
 import git from '@/../public/technologies/git.png';
 import github from '@/../public/technologies/github.png';
 import docker from '@/../public/technologies/docker.png';
+import styled from 'styled-components';
+
+
+const SlideTecnologiesStyle = styled(SlideTecnologies)`
+    & img{
+        filter: sepia(120%) hue-rotate(150deg) contrast(120%) saturate(5);
+    }
+`;
 
 export default function SlideSkills(props) {
 
@@ -30,44 +38,44 @@ export default function SlideSkills(props) {
                 <Stack alignItems="center" style={{paddingTop: "2rem", paddingBottom: "2rem"}}>
                     <H3 align="center" weight="500" transform="uppercase" size="32pt" >Tecnologias conhecidas</H3>
                 </Stack>
-                <SlideTecnologies slidesPerView="5" style={{paddingBottom: "2rem"}}>
+                <SlideTecnologiesStyle slidesPerView="5" style={{paddingBottom: "2rem"}}>
                     <SwiperSlide>
-                        <Image src={html.src} alt="html" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={html.src} alt="html" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={css.src} alt="css" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={css.src} alt="css" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={js.src} alt="js" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={js.src} alt="js" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={react.src} alt="react" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={react.src} alt="react" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={nextjs.src} alt="nextjs" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={nextjs.src} alt="nextjs" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={python.src} alt="python" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={python.src} alt="python" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={php.src} alt="php" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={php.src} alt="php" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={sql.src} alt="sql" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={sql.src} alt="sql" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={mongodb.src} alt="mongodb" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={mongodb.src} alt="mongodb" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={git.src} alt="git" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={git.src} alt="git" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={github.src} alt="github" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={github.src} alt="github" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={docker.src} alt="docker" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                        <Image src={docker.src} alt="docker" width={200} height={300} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
-                </SlideTecnologies>
+                </SlideTecnologiesStyle>
             </section>
 		</>
 	)
