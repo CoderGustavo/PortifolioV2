@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import React from "react";
 import styled from "styled-components";
 import { getColor } from "../design_system/colors";
-import { H2, H3, Text } from "../design_system/typography";
+import { H3, Text } from "../design_system/typography";
 
 const DateStyle = styled.span`
     color: ${getColor('primary-100')};

@@ -6,10 +6,21 @@ import { SwiperSlide } from 'swiper/react';
 
 import Image from 'next/image';
 
-import html from '@/../public/technologies/html.png';
 import { H3 } from '../design_system/typography';
 import { Stack } from '@mui/material';
 
+import html from '@/../public/technologies/html.png';
+import css from '@/../public/technologies/css.png';
+import js from '@/../public/technologies/js.png';
+import react from '@/../public/technologies/react.png';
+import nextjs from '@/../public/technologies/nextjs.png';
+import php from '@/../public/technologies/php.png';
+import python from '@/../public/technologies/python.png';
+import sql from '@/../public/technologies/sql.png';
+import mongodb from '@/../public/technologies/mongodb.png';
+import git from '@/../public/technologies/git.png';
+import github from '@/../public/technologies/github.png';
+import docker from '@/../public/technologies/docker.png';
 
 export default function SlideSkills(props) {
 
@@ -21,31 +32,40 @@ export default function SlideSkills(props) {
                 </Stack>
                 <SlideTecnologies slidesPerView="5" >
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={html.src} alt="html" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={css.src} alt="css" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={js.src} alt="js" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={react.src} alt="react" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={nextjs.src} alt="nextjs" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={python.src} alt="python" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={php.src} alt="php" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={sql.src} alt="sql" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={html.src} alt="banner-principal" height={200} width={200} blurDataURL={html.src} placeholder="blur"/>
+                        <Image src={mongodb.src} alt="mongodb" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={git.src} alt="git" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={github.src} alt="github" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={docker.src} alt="docker" width={0} height={0} style={{width: 'auto', height: "200px"}}/>
                     </SwiperSlide>
                 </SlideTecnologies>
             </section>
