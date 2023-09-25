@@ -6,7 +6,6 @@ import { H3, Text } from "../design_system/typography";
 
 const SectionStyled = styled.section`
     position: relative;
-    height: 40vh;
     & > div {
         height: 100%;
         padding: 5rem 0;
@@ -25,29 +24,37 @@ const ButtonStyled = styled(Button)`
 `;
 
 export const TextFieldStyled = styled(TextField)`
-    background-color: ${getColor('white')};
-    color: ${getColor('white')};
     & label.Mui-focused {
-        color: ${getColor('primary-200')};
+        color: #0054D2;
     }
     & label.Mui-focused ~ div::after{
-        border-color: ${getColor('primary-200')};
+        border-color: #0054D2;
+    }
+    background-color: #333;
+    & input{
+        border-color: #0054D2;
+        color: ${getColor('white')};
+    }
+    & label{
+        color: #777;
     }
 `;
 
 const StyledTextarea = styled(TextareaAutosize)(
     () => `
     width: 100%;
+    min-height: 300px;
+    margin: 1rem 0;
     font-family: IBM Plex Sans, sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
     padding: 12px;
-    border-radius: 12px 12px 0 12px;
+    border-color: #333;
     color: ${getColor('gray-300')};
-    border-bottom: 1px solid ${getColor('gray-200')};
     outline: 0;
-    background-color: ${getColor('white')};
+    color: ${getColor('white')};
+    background-color: #333;
 `,
 );
 

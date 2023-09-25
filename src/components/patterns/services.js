@@ -32,7 +32,7 @@ const Services = () => {
                                 <CardMedia
                                 component="img"
                                 height="300"
-                                image="/example.png"
+                                image="/service1.png"
                                 alt="green iguana"
                                 />
                                 <CardContent style={{background: getColor('black'), color: getColor('white')}}>
@@ -55,7 +55,7 @@ const Services = () => {
                                 <CardMedia
                                 component="img"
                                 height="300"
-                                image="/example.png"
+                                image="/service2.png"
                                 alt="green iguana"
                                 />
                                 <CardContent style={{background: getColor('black'), color: getColor('white')}}>
@@ -79,7 +79,7 @@ const Services = () => {
                                 <CardMedia
                                 component="img"
                                 height="300"
-                                image="/example.png"
+                                image="/service3.png"
                                 alt="green iguana"
                                 />
                                 <CardContent style={{background: getColor('black'), color: getColor('white')}}>

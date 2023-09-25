@@ -26,7 +26,7 @@ import styled from 'styled-components';
 
 const SlideTecnologiesStyle = styled(SlideTecnologies)`
     & img{
-        filter: sepia(120%) hue-rotate(150deg) contrast(120%) saturate(5);
+        filter: sepia(120%) hue-rotate(150deg) contrast(120%) saturate(5) drop-shadow(0px 0px 10px #4A93FF);
     }
 `;
 
@@ -40,40 +40,40 @@ export default function SlideSkills(props) {
                 </Stack>
                 <SlideTecnologiesStyle slidesPerView="5" style={{paddingBottom: "2rem"}}>
                     <SwiperSlide>
-                        <Image src={html.src} alt="html" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={html.src} alt="html" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={css.src} alt="css" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={css.src} alt="css" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={js.src} alt="js" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={js.src} alt="js" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={react.src} alt="react" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={react.src} alt="react" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={nextjs.src} alt="nextjs" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={nextjs.src} alt="nextjs" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={python.src} alt="python" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={python.src} alt="python" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={php.src} alt="php" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={php.src} alt="php" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={sql.src} alt="sql" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={sql.src} alt="sql" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={mongodb.src} alt="mongodb" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={mongodb.src} alt="mongodb" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={git.src} alt="git" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={git.src} alt="git" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={github.src} alt="github" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={github.src} alt="github" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={docker.src} alt="docker" width={200} height={300} style={{objectFit: "contain"}}/>
+                        <Image src={docker.src} alt="docker" width={150} height={150} style={{objectFit: "contain"}}/>
                     </SwiperSlide>
                 </SlideTecnologiesStyle>
             </section>
